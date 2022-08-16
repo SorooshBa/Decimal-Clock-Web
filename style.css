@@ -1,0 +1,181 @@
+.clock {
+  background: #ececec;
+  width: 300px;
+  height: 300px;
+  margin: 8% auto 0;
+  border-radius: 50%;
+  border: 14px solid 	#ececec;
+  position: relative;
+  box-shadow:  0 2vw 10vw -1vw rgba(255, 255, 255, 0.4);
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 10;
+  box-shadow: 0 2px 4px -1px black;
+}
+
+.hour-hand {
+  position: absolute;
+  z-index: 5;
+  width: 4px;
+  height: 65px;
+  background: #333;
+  top: 79px;
+  transform-origin: 50% 72px;
+  left: 50%;
+  margin-left: -2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0.8);
+}
+
+.minute-hand {
+  position: absolute;
+  z-index: 6;
+  width: 4px;
+  height: 100px;
+  background: #666;
+  top: 46px;
+  left: 50%;
+  margin-left: -2px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 50% 105px;
+  box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0.8);
+}
+
+.second-hand {
+  position: absolute;
+  z-index: 7;
+  width: 2px;
+  height: 120px;
+  background: rgb(255, 0, 0);
+  top: 26px;
+  lefT: 50%;
+  margin-left: -1px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  transform-origin: 50% 125px;
+  box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0.8);
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  color: #333;
+  font-size: 22px;
+  font-family: 'Poiret One';
+  font-weight: 700;
+  z-index: 4;
+}
+.h1{
+  top: 30px;
+  left: 80%;
+  margin-left: -9px;
+}
+.h2{
+  top: 90px;
+  left: 95%;
+  margin-left: -9px;
+}
+.h3 {
+  top: 180px;
+  right: 8px;
+  margin-left: -9px;
+}
+.h4 {
+  top: 240px;
+  right: 50px;
+  margin-left: -9px;
+}
+.h5 {
+  bottom: 00px;
+  left: 50%;
+  margin-left: -5px;
+}
+.h6{
+  top: 240px;
+  left: 55px;
+  margin-left: -9px;
+}
+.h7 {
+  top: 180px;
+  left: 20px;
+  margin-left: -9px;
+}
+.h8{
+  top: 90px;
+  right: 93%;
+  margin-left: -9px;
+}
+.h9{
+  top: 30px;
+  right: 78%;
+  margin-left: -9px;
+}
+.h10 {
+  top: 0px;
+  left: 50%;
+  margin-left: -9px;
+}
+
+
+
+
+.diallines {
+  position: absolute;
+  z-index: 2;
+  width: 2px;
+  height: 15px;
+  background: #666;
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: 50% 150px;
+}
+.diallines:nth-of-type(5n) {
+  position: absolute;
+  z-index: 2;
+  width: 4px;
+  height: 25px;
+  background: #666;
+  left: 50%;
+  margin-left: -1px;
+  transform-origin: 50% 150px;
+}
+
+.info {
+  position: absolute;
+  width: 120px;
+  height: 20px;
+  border-radius: 7px;
+  background: #000000;
+  text-align: center;
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 11px;
+  top: 200px;
+  left: 50%;
+  margin-left: -60px;
+  font-family: "Poiret One";
+  font-weight: 700;
+  z-index: 3;
+  letter-spacing: 3px;
+  margin-left: -60px;
+  left: 50%;
+}
+.date {
+    top: 80px;
+    height: 40px;
+  }
+.day {
+    top: 200px;
+}
